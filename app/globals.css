@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: '';
+    --font-lora: '';
+    --font-jetbrains: '';
+  }
+
+  html {
+    background-color: #FAFAF8;
+    color: #1A1A1A;
+  }
+
+  body {
+    @apply font-sans antialiased;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}

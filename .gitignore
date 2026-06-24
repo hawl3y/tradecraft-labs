@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Next.js
+/.next/
+/out/
+
+# Contentlayer
+/.contentlayer/
+
+# Build outputs
+/build/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System
+.DS_Store
+*.pem
+Thumbs.db
+
+# Claude Code
+.claude/
+
+# Research participant data (PII — excluded from public repository)
+research/**/Interview_Pool*.docx
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Vercel
+.vercel
+
+# Testing
+/coverage/
+
+# Visual review screenshots
+docs/screenshots/

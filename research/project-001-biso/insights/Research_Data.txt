@@ -1,0 +1,144 @@
+# BISO Research Project - Research Data (Raw Observations)
+
+## Practitioner Background
+
+* Current role: Cybersecurity Director, Business Information Security Partner (Business Information Security Officer equivalent).
+* Role serves as an intermediary between cybersecurity, product security, IT, and business functions.
+* Organization appears to be transitioning from the term "Security Partner" toward "BISO."
+
+## Observation: Role Perception
+
+* The BISO function is organizationally positioned within cybersecurity.
+* Business stakeholders may view the BISO as part of cybersecurity first, regardless of business-facing responsibilities.
+* Cybersecurity stakeholders may expect the BISO to align primarily with cybersecurity objectives.
+
+## Observation: Security and Business Communication
+
+* Cybersecurity teams often communicate risk in technical terms.
+* Business leaders often evaluate decisions through operational, financial, reputational, and strategic impacts.
+* Effective decision making requires both technical understanding and business context.
+
+## Observation: Governance and Process Challenges
+
+* Security policies and standards are not always consistently understood across cybersecurity, IT, and business functions.
+* Lack of process clarity can create escalations, misunderstandings, and inconsistent outcomes.
+* Business units may escalate security decisions when processes are unclear.
+* Cybersecurity teams may enforce controls without fully understanding operational impacts.
+
+## Case Study 1: Unsupported Marketing Systems
+
+### Situation
+
+* Cybersecurity identified systems operating without required security tooling.
+* Systems supported important marketing functions and business assets.
+
+### Cybersecurity Position
+
+* Systems should be remediated or shut down.
+* Existing systems could not support required security tooling.
+
+### Business Position
+
+* Systems needed to remain operational.
+* Immediate shutdown would negatively impact business operations.
+
+### BISO Actions
+
+* Met separately with cybersecurity and business stakeholders.
+* Identified a compensating control (network isolation through VLAN segmentation).
+* Facilitated discussions regarding risk mitigation and replacement timelines.
+
+### Outcome
+
+* Systems were moved to a dedicated VLAN.
+* Business committed to replacing systems within one year.
+* Cybersecurity and business stakeholders agreed on the approach.
+
+### Observed Themes
+
+* Security-business conflict.
+* Governance gap.
+* Risk communication.
+* Decision facilitation.
+* Compensating controls.
+* Business continuity considerations.
+
+## Case Study 2: VPN Restriction Exception
+
+### Situation
+
+* Following a cybersecurity incident, all non-approved VPN solutions were blocked.
+* A business function relied on Ubiquiti VPN technology for customer support operations.
+
+### Cybersecurity Position
+
+* Only the approved enterprise VPN should be permitted.
+* All other VPN technologies should remain blocked.
+
+### Business Position
+
+* Blocking the VPN disrupted customer support capabilities.
+* Operational, revenue, and reputational impacts were identified.
+
+### BISO Actions
+
+* Facilitated communication between cybersecurity and business stakeholders.
+* Assisted with formal exception request process.
+* Supported evaluation of migration to approved VPN technology.
+
+### Outcome
+
+* Temporary exception approved for 90 days.
+* Business operations continued.
+* Longer-term solution remained under evaluation.
+
+### Observed Themes
+
+* Risk acceptance.
+* Exception management.
+* Business continuity.
+* Governance process.
+* Security standard deviations.
+
+## Case Study 3: Expanded Administrative Access
+
+### Situation
+
+* Business units requested expanded administrative privileges.
+* Engineering, R&D, and field service teams cited operational requirements.
+
+### Cybersecurity Position
+
+* Expanded administrative access increased risk exposure.
+* Greater privilege restrictions were preferred.
+
+### Business Position
+
+* Administrative access was necessary for productivity and operational effectiveness.
+
+### BISO Actions
+
+* Advocated for business needs.
+* Supported broader administrative access approvals.
+
+### Outcome
+
+* Additional groups received administrative privileges.
+* Later reflection identified insufficient challenge of alternative approaches.
+* Temporary elevation and just-in-time access models were not rigorously evaluated.
+
+### Observed Themes
+
+* Privileged access management.
+* Risk acceptance.
+* Business influence.
+* Governance process weakness.
+* Decision quality concerns.
+
+## Recurring Patterns Across Cases
+
+* Security and business objectives frequently compete.
+* Escalations often occur when governance processes are unclear.
+* Business impact and operational continuity frequently influence security decisions.
+* Formal governance mechanisms (exceptions, compensating controls, documented timelines) help resolve conflicts.
+* BISO involvement frequently occurs during decision-making conflicts.
