@@ -4,7 +4,7 @@ Independent research exploring the human side of cybersecurity governance, leade
 
 ## About
 
-Tradecraft Labs publishes research in progress — working theories, raw observations, literature frameworks, and evolving analysis as it develops. Research is the product, not only the finished paper.
+Tradecraft Labs publishes research in progress: working theories, raw observations, literature frameworks, and evolving analysis as it develops. Research is the product, not only the finished paper.
 
 ## Current Research
 

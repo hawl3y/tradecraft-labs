@@ -1,5 +1,15 @@
 # Tradecraft Labs — CLAUDE.md
 
+## Operating Model
+
+The operational workflow for conducting research, maintaining content, updating the platform, and managing deployments is defined in:
+
+docs/Research-Operations.md
+
+Always follow that workflow when processing new research or making platform updates.
+
+---
+
 ## Purpose
 
 Tradecraft Labs is an independent research platform for cybersecurity governance, leadership, and risk-informed decision making.

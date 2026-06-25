@@ -7,7 +7,7 @@ import { getAllJournalEntries, getAllProjects } from '@/lib/content'
 export const metadata: Metadata = {
   title: 'Research Journal — Tradecraft Labs',
   description:
-    'A continuous record of research in progress — milestones, reflections, updates, and observations.',
+    'A continuous record of research in progress: milestones, reflections, updates, and observations.',
 }
 
 interface PageProps {

@@ -8,7 +8,7 @@ export const SITE = {
   },
   links: {
     personal: 'https://joehawley.com',
-    linkedin: 'https://www.linkedin.com/in/joehawley/',
+    linkedin: 'https://www.linkedin.com/in/joechawley/',
   },
   year: new Date().getFullYear().toString(),
 } as const

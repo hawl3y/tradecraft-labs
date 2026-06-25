@@ -23,7 +23,7 @@ export default function AboutPage() {
         </p>
         <p className="text-base text-muted leading-relaxed">
           Research is the product. This platform documents research in
-          progress — not just final outputs. Working theories, raw
+          progress, not just final outputs. Working theories, raw
           observations, literature frameworks, and the reasoning behind
           decisions are published as they develop.
         </p>
@@ -39,7 +39,7 @@ export default function AboutPage() {
         </p>
         <p className="text-base text-muted leading-relaxed mb-5">
           The current research investigates the Business Information Security
-          Officer role as a governance intermediary — examining how trust,
+          Officer role as a governance intermediary, examining how trust,
           influence, and structured decision-making processes determine
           whether security risk is understood and acted on at the business
           level.
@@ -65,12 +65,12 @@ export default function AboutPage() {
           He is completing a Master of Science in Cybersecurity at Georgia
           Tech, where his graduate research examines the BISO role through
           the lens of organizational governance theory and boundary-spanning
-          leadership — drawing on both academic literature and practitioner
+          leadership, drawing on both academic literature and practitioner
           interviews with cybersecurity, business, and governance leaders.
         </p>
         <p className="text-base text-muted leading-relaxed">
-          Tradecraft Labs is where that research lives publicly — a platform
-          for documenting the work as it happens, not just when it is done.
+          Tradecraft Labs is where that research lives publicly. It documents
+          the work as it happens, not just when it is done.
         </p>
       </section>
 
