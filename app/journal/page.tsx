@@ -30,12 +30,18 @@ export default async function JournalPage({ searchParams }: PageProps) {
     entries = entries.filter((e) => e.project === currentProject)
   }
 
-  const projects = getAllProjects().map((p) => ({
+  const allProjects = getAllProjects()
+
+  const projects = allProjects.map((p) => ({
     slug: p.slug,
     projectNumber: p.projectNumber,
     shortTitle: p.shortTitle,
     title: p.title,
   }))
+
+  const projectLabels = Object.fromEntries(
+    allProjects.map((p) => [p.slug, p.shortTitle ?? `Project ${p.projectNumber}`])
+  )
 
   const isFiltered = currentCategory !== 'all' || currentProject !== 'all'
 
@@ -67,7 +73,7 @@ export default async function JournalPage({ searchParams }: PageProps) {
       </p>
 
       {/* Timeline */}
-      <JournalTimeline entries={entries} showProjectBadge={true} />
+      <JournalTimeline entries={entries} showProjectBadge={true} projectLabels={projectLabels} />
     </PageLayout>
   )
 }

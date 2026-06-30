@@ -18,20 +18,22 @@ const CATEGORY_LABEL: Record<string, string> = {
   observation: 'Observation',
 }
 
-function getProjectNumber(projectSlug: string): string | null {
+function getProjectFallbackLabel(projectSlug: string): string {
   const match = projectSlug.match(/^project-(\d+)/)
-  return match ? match[1] : null
+  return match ? `Project ${match[1]}` : projectSlug
 }
 
 interface JournalTimelineProps {
   entries: JournalEntry[]
   showProjectBadge?: boolean
+  projectLabels?: Record<string, string>
   emptyMessage?: string
 }
 
 export default function JournalTimeline({
   entries,
   showProjectBadge = true,
+  projectLabels = {},
   emptyMessage = 'No journal entries match the current filter.',
 }: JournalTimelineProps) {
   if (entries.length === 0) {
@@ -54,7 +56,7 @@ export default function JournalTimeline({
 
       <ol role="list">
         {entries.map((entry) => {
-          const projectNum = getProjectNumber(entry.project)
+          const projectLabel = projectLabels[entry.project] ?? getProjectFallbackLabel(entry.project)
 
           return (
             <li key={entry.slug} className="relative pl-9 pb-12 last:pb-0">
@@ -78,8 +80,8 @@ export default function JournalTimeline({
                   label={CATEGORY_LABEL[entry.category] ?? entry.category}
                   variant={CATEGORY_VARIANT[entry.category] ?? 'default'}
                 />
-                {showProjectBadge && projectNum && (
-                  <Badge label={`Project ${projectNum}`} variant="info" />
+                {showProjectBadge && (
+                  <Badge label={projectLabel} variant="info" />
                 )}
               </div>
 
