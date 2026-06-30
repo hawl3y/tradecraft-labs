@@ -18,7 +18,7 @@ export default function ResearchCard({ project, artifactCount }: ResearchCardPro
     <Card as="article" hover>
       {/* Project number + status */}
       <div className="flex flex-wrap items-center gap-2 mb-4">
-        <Badge label={`Project ${project.projectNumber}`} variant="info" />
+        <Badge label={project.shortTitle ?? `Project ${project.projectNumber}`} variant="info" />
         <StatusBadge status={project.status} />
       </div>
 

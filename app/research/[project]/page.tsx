@@ -62,14 +62,14 @@ export default async function ProjectPage({ params }: Props) {
       <BreadcrumbNav
         crumbs={[
           { label: 'Research', href: '/research' },
-          { label: `Project ${project.projectNumber}` },
+          { label: project.shortTitle ?? `Project ${project.projectNumber}` },
         ]}
       />
 
       {/* Header */}
       <header className="mb-10">
         <div className="flex flex-wrap items-center gap-2 mb-4">
-          <Badge label={`Project ${project.projectNumber}`} variant="info" />
+          <Badge label={project.shortTitle ?? `Project ${project.projectNumber}`} variant="info" />
           <StatusBadge status={project.status} />
         </div>
         <h1 className="font-serif text-3xl md:text-4xl text-ink leading-tight mb-6">

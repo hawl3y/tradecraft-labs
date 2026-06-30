@@ -81,7 +81,7 @@ export default async function ArtifactPage({ params }: Props) {
           href={project.url}
           className="text-sm font-medium text-navy hover:underline"
         >
-          {project.projectNumber} — {project.title}
+          {project.shortTitle ?? `Project ${project.projectNumber}`} — {project.title}
         </Link>
       </div>
 
@@ -172,7 +172,7 @@ export default async function ArtifactPage({ params }: Props) {
       <BreadcrumbNav
         crumbs={[
           { label: 'Research', href: '/research' },
-          { label: `Project ${project.projectNumber}`, href: project.url },
+          { label: project.shortTitle ?? `Project ${project.projectNumber}`, href: project.url },
           { label: 'Artifacts', href: `/research/${project.slug}/artifacts` },
           { label: artifact.title },
         ]}

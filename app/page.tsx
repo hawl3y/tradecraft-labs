@@ -47,7 +47,7 @@ export default function Home() {
               Current Research
             </p>
             <div className="flex flex-wrap items-center gap-2 mb-5">
-              <Badge label={`Project ${project.projectNumber}`} variant="info" />
+              <Badge label={project.shortTitle ?? `Project ${project.projectNumber}`} variant="info" />
               <StatusBadge status={project.status} />
             </div>
             <h2

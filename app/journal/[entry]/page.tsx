@@ -87,7 +87,7 @@ export default async function JournalEntryPage({ params }: Props) {
               href={project.url}
               className="text-xs text-navy hover:text-navy/70 transition-colors duration-150"
             >
-              Project {project.projectNumber}
+              {project.shortTitle ?? `Project ${project.projectNumber}`}
             </Link>
           )}
         </div>

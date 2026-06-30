@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const project = getProjectBySlug(slug)
   if (!project) return {}
   return {
-    title: `Artifacts — Project ${project.projectNumber} — Tradecraft Labs`,
+    title: `Artifacts — ${project.shortTitle ?? `Project ${project.projectNumber}`} — Tradecraft Labs`,
     description: `Research artifacts for: ${project.title}`,
   }
 }
@@ -43,14 +43,14 @@ export default async function ArtifactsPage({ params }: Props) {
       <BreadcrumbNav
         crumbs={[
           { label: 'Research', href: '/research' },
-          { label: `Project ${project.projectNumber}`, href: `/research/${project.slug}` },
+          { label: project.shortTitle ?? `Project ${project.projectNumber}`, href: `/research/${project.slug}` },
           { label: 'Artifacts' },
         ]}
       />
 
       <header className="mb-10">
         <div className="flex flex-wrap items-center gap-2 mb-3">
-          <Badge label={`Project ${project.projectNumber}`} variant="info" />
+          <Badge label={project.shortTitle ?? `Project ${project.projectNumber}`} variant="info" />
           <StatusBadge status={project.status} />
         </div>
         <h1 className="font-serif text-3xl text-ink mb-2">Artifacts</h1>

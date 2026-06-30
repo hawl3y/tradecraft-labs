@@ -22,6 +22,11 @@ export const Project = defineDocumentType(() => ({
       required: true,
       description: 'Display number (e.g. 001)',
     },
+    shortTitle: {
+      type: 'string',
+      required: false,
+      description: 'Short display label used in badges and navigation (e.g. BISO Governance)',
+    },
     status: {
       type: 'enum',
       options: ['active', 'completed', 'planned', 'paused'],

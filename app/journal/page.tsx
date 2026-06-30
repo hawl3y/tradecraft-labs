@@ -33,6 +33,7 @@ export default async function JournalPage({ searchParams }: PageProps) {
   const projects = getAllProjects().map((p) => ({
     slug: p.slug,
     projectNumber: p.projectNumber,
+    shortTitle: p.shortTitle,
     title: p.title,
   }))
 

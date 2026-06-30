@@ -25,8 +25,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const project = getProjectBySlug(slug)
   if (!project) return { title: 'Not Found' }
   return {
-    title: `Journal — Project ${project.projectNumber} — Tradecraft Labs`,
-    description: `Research journal entries for Project ${project.projectNumber}.`,
+    title: `Journal — ${project.shortTitle ?? `Project ${project.projectNumber}`} — Tradecraft Labs`,
+    description: `Research journal entries for ${project.shortTitle ?? `Project ${project.projectNumber}`}.`,
   }
 }
 
@@ -55,7 +55,7 @@ export default async function ProjectJournalPage({
       <BreadcrumbNav
         crumbs={[
           { label: 'Research', href: '/research' },
-          { label: `Project ${project.projectNumber}`, href: project.url },
+          { label: project.shortTitle ?? `Project ${project.projectNumber}`, href: project.url },
           { label: 'Journal' },
         ]}
       />
@@ -63,7 +63,7 @@ export default async function ProjectJournalPage({
       {/* Page header */}
       <div className="mt-8 mb-10">
         <p className="text-xs font-medium uppercase tracking-widest text-muted mb-2">
-          Project {project.projectNumber}
+          {project.shortTitle ?? `Project ${project.projectNumber}`}
         </p>
         <h1 className="font-serif text-3xl text-ink mb-2">Research Journal</h1>
         <p className="text-sm text-muted">

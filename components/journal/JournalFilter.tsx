@@ -16,6 +16,7 @@ const CATEGORIES: { value: CategoryValue; label: string }[] = [
 interface Project {
   slug: string
   projectNumber: string
+  shortTitle?: string
   title: string
 }
 
@@ -94,7 +95,7 @@ export default function JournalFilter({
               )}
               aria-pressed={currentProject === p.slug}
             >
-              Project {p.projectNumber}
+              {p.shortTitle ?? `Project ${p.projectNumber}`}
             </button>
           ))}
         </div>
