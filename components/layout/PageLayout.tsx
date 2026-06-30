@@ -20,7 +20,7 @@ export default function PageLayout({
   width = 'default',
 }: PageLayoutProps) {
   return (
-    <div className={cn(widthClasses[width], 'mx-auto px-6 py-12', className)}>
+    <div className={cn(widthClasses[width], 'w-full mx-auto px-6 py-12', className)}>
       {children}
     </div>
   )

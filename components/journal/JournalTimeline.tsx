@@ -38,14 +38,12 @@ export default function JournalTimeline({
 }: JournalTimelineProps) {
   if (entries.length === 0) {
     return (
-      <div className="min-h-[480px]">
-        <p className="py-8 text-sm text-muted">{emptyMessage}</p>
-      </div>
+      <p className="py-8 text-sm text-muted">{emptyMessage}</p>
     )
   }
 
   return (
-    <div className="relative min-h-[480px]">
+    <div className="relative">
       {/* Continuous vertical line connecting all entries */}
       {entries.length > 1 && (
         <div
