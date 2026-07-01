@@ -5,7 +5,7 @@ import JournalFilter from '@/components/journal/JournalFilter'
 import { getAllJournalEntries, getAllProjects } from '@/lib/content'
 
 export const metadata: Metadata = {
-  title: 'Research Journal — Tradecraft Labs',
+  title: 'Research Journal',
   description:
     'A continuous record of research in progress: milestones, reflections, updates, and observations.',
 }

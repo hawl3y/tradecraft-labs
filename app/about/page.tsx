@@ -4,10 +4,10 @@ import PageLayout from '@/components/layout/PageLayout'
 import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'About — Tradecraft Labs',
+  title: 'About',
   description: SITE.mission.full,
   openGraph: {
-    title: 'About — Tradecraft Labs',
+    title: 'About',
     description: SITE.mission.full,
   },
 }

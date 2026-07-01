@@ -5,7 +5,7 @@ import { getAllProjects, getArtifactsByProject } from '@/lib/content'
 import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Research — Tradecraft Labs',
+  title: 'Research',
   description: SITE.mission.full,
 }
 
