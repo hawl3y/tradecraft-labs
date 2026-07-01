@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <PageLayout width="narrow">
+    <PageLayout>
       {/* Mission */}
       <h1 className="sr-only">About Tradecraft Labs</h1>
       <section className="mb-12 pb-12 border-b border-gray-100">
