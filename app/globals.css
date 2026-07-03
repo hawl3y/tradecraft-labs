@@ -4,9 +4,9 @@
 
 @layer base {
   :root {
-    --font-inter: '';
+    --font-geist: '';
     --font-lora: '';
-    --font-jetbrains: '';
+    --font-geist-mono: '';
   }
 
   html {

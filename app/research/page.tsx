@@ -15,7 +15,7 @@ export default function ResearchPage() {
   return (
     <PageLayout>
       <div className="mb-10">
-        <h1 className="font-serif text-3xl text-ink mb-2">Research Projects</h1>
+        <h1 className="font-serif font-medium text-3xl text-ink mb-2">Research Projects</h1>
         <p className="text-base text-muted">
           Active and planned research initiatives.
         </p>

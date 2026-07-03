@@ -72,7 +72,7 @@ export default async function ProjectPage({ params }: Props) {
           <Badge label={project.shortTitle ?? `Project ${project.projectNumber}`} variant="info" />
           <StatusBadge status={project.status} />
         </div>
-        <h1 className="font-serif text-3xl md:text-4xl text-ink leading-tight mb-6">
+        <h1 className="font-serif font-medium text-3xl md:text-4xl text-ink leading-tight mb-6">
           {project.title}
         </h1>
         <div className="pt-4 border-t border-gray-100">
@@ -101,7 +101,7 @@ export default async function ProjectPage({ params }: Props) {
         {/* Artifacts */}
         <section>
           <div className="flex items-baseline justify-between gap-4 mb-6">
-            <h2 className="font-serif text-xl text-ink">Artifacts</h2>
+            <h2 className="font-serif font-medium text-xl text-ink">Artifacts</h2>
             <Link
               href={`/research/${project.slug}/artifacts`}
               className="text-sm text-navy hover:underline"
@@ -115,7 +115,7 @@ export default async function ProjectPage({ params }: Props) {
         {/* Journal sidebar */}
         <aside>
           <div className="flex items-baseline justify-between gap-4 mb-6">
-            <h2 className="font-serif text-xl text-ink">Journal</h2>
+            <h2 className="font-serif font-medium text-xl text-ink">Journal</h2>
             <Link
               href={`/research/${project.slug}/journal`}
               className="text-sm text-navy hover:underline"

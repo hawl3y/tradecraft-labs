@@ -85,7 +85,7 @@ export default function JournalTimeline({
 
               {/* Title */}
               <Link href={entry.url} className="group">
-                <h3 className="font-serif text-xl text-ink group-hover:text-navy transition-colors duration-150 leading-snug mb-2">
+                <h3 className="font-serif font-medium text-xl text-ink group-hover:text-navy transition-colors duration-150 leading-snug mb-2">
                   {entry.title}
                 </h3>
               </Link>

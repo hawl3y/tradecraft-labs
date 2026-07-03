@@ -32,11 +32,11 @@ export default function Nav() {
                 href={href}
                 aria-current={active ? 'page' : undefined}
                 className={cn(
-                  'text-sm font-medium transition-colors duration-150',
+                  'text-sm tracking-wide transition-colors duration-150',
                   'focus:outline-none focus-visible:ring-2 focus-visible:ring-navy focus-visible:ring-offset-2 rounded-sm',
                   active
-                    ? 'text-navy underline underline-offset-4 decoration-navy/50'
-                    : 'text-ink hover:text-navy'
+                    ? 'text-navy font-medium underline underline-offset-4 decoration-navy/40'
+                    : 'font-normal text-muted hover:text-navy'
                 )}
               >
                 {label}
@@ -66,9 +66,9 @@ export default function Nav() {
         ) : (
           /* Hamburger icon */
           <>
-            <span className="w-5 h-px bg-ink" />
-            <span className="w-5 h-px bg-ink" />
-            <span className="w-5 h-px bg-ink" />
+            <span className="w-5 h-px bg-muted" />
+            <span className="w-5 h-px bg-muted" />
+            <span className="w-5 h-px bg-muted" />
           </>
         )}
       </button>
@@ -88,9 +88,9 @@ export default function Nav() {
                     href={href}
                     aria-current={active ? 'page' : undefined}
                     className={cn(
-                      'block text-sm font-medium py-1 transition-colors duration-150',
+                      'block text-sm tracking-wide py-1 transition-colors duration-150',
                       'focus:outline-none focus-visible:ring-2 focus-visible:ring-navy focus-visible:ring-offset-2 rounded-sm',
-                      active ? 'text-navy' : 'text-ink hover:text-navy'
+                      active ? 'text-navy font-medium' : 'font-normal text-muted hover:text-navy'
                     )}
                     onClick={() => setMobileOpen(false)}
                   >

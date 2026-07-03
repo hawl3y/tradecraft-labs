@@ -49,7 +49,7 @@ export default async function JournalPage({ searchParams }: PageProps) {
     <PageLayout>
       {/* Page header */}
       <div className="mb-10">
-        <h1 className="font-serif text-3xl text-ink mb-2">Research Journal</h1>
+        <h1 className="font-serif font-medium text-3xl text-ink mb-2">Research Journal</h1>
         <p className="text-base text-muted">
           A continuous record of research in progress.
         </p>

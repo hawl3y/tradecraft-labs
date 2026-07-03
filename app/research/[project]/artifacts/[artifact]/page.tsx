@@ -186,7 +186,7 @@ export default async function ArtifactPage({ params }: Props) {
             <Badge label={`v${artifact.version}`} variant="muted" />
             {!isStub && <StatusBadge status={artifact.status} />}
           </div>
-          <h1 className="font-serif text-3xl text-ink leading-tight mb-4">
+          <h1 className="font-serif font-medium text-3xl text-ink leading-tight mb-4">
             {artifact.title}
           </h1>
           <p className="text-base text-muted leading-relaxed border-l-4 border-gray-200 pl-4">

@@ -8,8 +8,8 @@ export default function Footer() {
         <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
           {/* Brand + mission */}
           <div className="max-w-prose">
-            <p className="font-serif text-sm font-semibold tracking-wide text-ink">
-              {SITE.name.toUpperCase()}
+            <p className="font-sans text-xs font-medium uppercase tracking-widest text-ink">
+              {SITE.name}
             </p>
             <p className="mt-2 text-sm text-muted leading-relaxed">
               {SITE.mission.full}

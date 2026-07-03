@@ -23,7 +23,7 @@ export default function ResearchCard({ project, artifactCount }: ResearchCardPro
       </div>
 
       {/* Title */}
-      <h2 className="font-serif text-xl md:text-2xl text-ink leading-snug mb-5">
+      <h2 className="font-serif font-medium text-xl md:text-2xl text-ink leading-snug mb-5">
         <Link
           href={project.url}
           className="hover:text-navy transition-colors duration-150"

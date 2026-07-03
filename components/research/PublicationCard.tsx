@@ -35,7 +35,7 @@ export default function PublicationCard({ publication }: PublicationCardProps) {
         )}
       </div>
 
-      <h2 className="font-serif text-lg text-ink leading-snug mb-3">
+      <h2 className="font-serif font-medium text-lg text-ink leading-snug mb-3">
         {publication.title}
       </h2>
 

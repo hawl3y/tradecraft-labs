@@ -1,14 +1,14 @@
 import type { Metadata } from 'next'
-import { Inter, Lora, JetBrains_Mono } from 'next/font/google'
+import { Geist, Geist_Mono, Lora } from 'next/font/google'
 import { Header } from '@/components/layout'
 import { Footer } from '@/components/layout'
 import PlausibleScript from '@/components/analytics/PlausibleScript'
 import { SITE } from '@/lib/site'
 import './globals.css'
 
-const inter = Inter({
+const geist = Geist({
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-geist',
   display: 'swap',
 })
 
@@ -18,9 +18,9 @@ const lora = Lora({
   display: 'swap',
 })
 
-const jetbrainsMono = JetBrains_Mono({
+const geistMono = Geist_Mono({
   subsets: ['latin'],
-  variable: '--font-jetbrains',
+  variable: '--font-geist-mono',
   display: 'swap',
 })
 
@@ -66,7 +66,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${lora.variable} ${jetbrainsMono.variable}`}
+      className={`${geist.variable} ${lora.variable} ${geistMono.variable}`}
     >
       <body className="flex min-h-screen flex-col bg-background text-ink font-sans antialiased">
         <a

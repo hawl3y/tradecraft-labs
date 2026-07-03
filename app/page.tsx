@@ -29,7 +29,7 @@ export default function Home() {
         <div className="max-w-content mx-auto px-6 py-12 md:py-16">
           <h1
             id="hero-heading"
-            className="font-serif text-4xl md:text-5xl text-ink leading-[1.2] max-w-3xl"
+            className="font-serif font-medium text-4xl md:text-5xl text-ink leading-[1.2] max-w-3xl"
           >
             {SITE.mission.full}
           </h1>
@@ -52,7 +52,7 @@ export default function Home() {
             </div>
             <h2
               id="current-research-heading"
-              className="font-serif text-2xl md:text-3xl text-ink leading-snug max-w-3xl mb-5"
+              className="font-serif font-medium text-2xl md:text-3xl text-ink leading-snug max-w-3xl mb-5"
             >
               {project.title}
             </h2>
@@ -113,7 +113,7 @@ export default function Home() {
           <div className="flex items-baseline justify-between mb-8">
             <h2
               id="journal-preview-heading"
-              className="font-serif text-2xl text-ink"
+              className="font-serif font-medium text-2xl text-ink"
             >
               From the Research Journal
             </h2>

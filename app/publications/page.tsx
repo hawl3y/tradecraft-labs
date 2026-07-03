@@ -20,7 +20,7 @@ export default function PublicationsPage() {
   return (
     <PageLayout>
       <div className="mb-10">
-        <h1 className="font-serif text-3xl text-ink mb-2">Publications</h1>
+        <h1 className="font-serif font-medium text-3xl text-ink mb-2">Publications</h1>
         <p className="text-base text-muted">
           Research papers, drafts, and presentations.
         </p>

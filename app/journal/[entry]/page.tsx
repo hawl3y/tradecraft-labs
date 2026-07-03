@@ -93,7 +93,7 @@ export default async function JournalEntryPage({ params }: Props) {
         </div>
 
         {/* Title */}
-        <h1 className="font-serif text-3xl text-ink leading-snug mb-6">
+        <h1 className="font-serif font-medium text-3xl text-ink leading-snug mb-6">
           {entry.title}
         </h1>
 

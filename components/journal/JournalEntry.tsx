@@ -34,7 +34,7 @@ export default function JournalEntry({ entry }: JournalEntryProps) {
         />
       </div>
       <Link href={entry.url} className="group">
-        <h3 className="text-base font-medium text-ink group-hover:text-navy transition-colors duration-150 leading-snug mb-1.5">
+        <h3 className="font-serif font-medium text-lg text-ink group-hover:text-navy transition-colors duration-150 leading-snug mb-1.5">
           {entry.title}
         </h3>
       </Link>

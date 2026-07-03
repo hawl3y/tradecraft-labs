@@ -65,7 +65,7 @@ export default async function ProjectJournalPage({
         <p className="text-xs font-medium uppercase tracking-widest text-muted mb-2">
           {project.shortTitle ?? `Project ${project.projectNumber}`}
         </p>
-        <h1 className="font-serif text-3xl text-ink mb-2">Research Journal</h1>
+        <h1 className="font-serif font-medium text-3xl text-ink mb-2">Research Journal</h1>
         <p className="text-sm text-muted">
           Journal entries for this research project.{' '}
           <Link

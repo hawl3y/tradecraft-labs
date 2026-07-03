@@ -53,7 +53,7 @@ export default async function ArtifactsPage({ params }: Props) {
           <Badge label={project.shortTitle ?? `Project ${project.projectNumber}`} variant="info" />
           <StatusBadge status={project.status} />
         </div>
-        <h1 className="font-serif text-3xl text-ink mb-2">Artifacts</h1>
+        <h1 className="font-serif font-medium text-3xl text-ink mb-2">Artifacts</h1>
         <p className="text-sm text-muted">
           {activeCount} of {artifacts.length} artifacts published
         </p>
