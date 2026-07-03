@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import Nav from './Nav'
 import { SITE } from '@/lib/site'
@@ -10,9 +11,16 @@ export default function Header() {
         <div>
           <Link
             href="/"
-            className="block font-serif text-xl font-semibold tracking-wide text-ink hover:text-navy transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-navy focus-visible:ring-offset-2 rounded-sm"
+            className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-navy focus-visible:ring-offset-2 rounded-sm"
           >
-            {SITE.name.toUpperCase()}
+            <Image
+              src="/tradecraft-labs-logo.png"
+              alt={SITE.name}
+              width={1306}
+              height={241}
+              priority
+              className="h-11 sm:h-12 w-auto"
+            />
           </Link>
           <p className="hidden sm:block text-xs text-muted mt-0.5 leading-none">
             {SITE.mission.short}
