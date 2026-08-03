@@ -115,6 +115,7 @@ Current: `project-001-biso`
 - `Interview_Pool_v1.docx` is excluded from git by `.gitignore` and must remain excluded.
 - The `biso-interview-pool.mdx` artifact stub is publishable — it contains no participant data.
 - Always anonymize practitioner examples in research data artifacts.
+- Do not use em dashes in any written content. Use commas, periods, or parentheses instead.
 
 ### Git
 - `npm run build` must pass with 0 errors before any commit.
@@ -158,6 +159,8 @@ Required frontmatter fields:
 - `project`
 
 Journal entries must reflect real events. They document what was learned, emerging themes, and research progress.
+
+Write journal entries in the researcher's first-person voice ("I," not "the researcher" or passive framing). Do not use em dashes anywhere in written content — use commas, periods, or parentheses instead.
 
 ### Converting a Stub Artifact (Phase 7)
 
